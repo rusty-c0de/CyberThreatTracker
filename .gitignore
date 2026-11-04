@@ -112,3 +112,4 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+.vs/*

@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello, world!</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="favicon.png">
+</head>
+<body>
+    <nav class="nav" id="nav">
+        <a href="index.html">Logo</a>
+        <a href="page1.html">Menu Item 1</a>
+        <a href="page2.html">Menu Item 2</a>
+        <a href="page3.html">Menu Item 3</a>
+        <a href="javascript:void(0);" id="menu-toggle" onclick="togglemenu()">
+            <div class="menu-toggle__bar1"></div>
+            <div class="menu-toggle__bar2"></div>
+            <div class="menu-toggle__bar3"></div>
+        </a>
+    </nav>
+    <h1>im page 3</h1>
+    <script>
+  function togglemenu() {
+    var x = document.getElementById("nav");
+    if (x.className === "nav") {
+      x.className += " nav--open";
+    } else {
+      x.className = "nav";
+    }
+    var element = document.getElementById("menu-toggle");
+    element.classList.toggle("menu-toggle--open");
